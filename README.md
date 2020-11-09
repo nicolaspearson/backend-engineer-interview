@@ -10,18 +10,18 @@ Feel free to get in touch if you have questions regarding the assignment.
 Create a Node.js application that provides the following functionality:
 
 1. A user should be able to register, by providing the following profile information:
-- First name
-- Last name
-- Email address
-- Physical address (street and house number, postal code, city)
-- Password
+    - First name
+    - Last name
+    - Email address
+    - Physical address (street and house number, postal code, city)
+    - Password
 2. A user should be able to login using their email address and password, and the server should return a JWT.
 3. A user should be able to retrieve their own profile by providing the JWT in the request.
 4. A user should be able to update their information by providing a JWT and one or more of the following fields:
-- First name
-- Last name
-- Email address
-- Physical address (street and house number, postal code, city)
+    - First name
+    - Last name
+    - Email address
+    - Physical address (street and house number, postal code, city)
 5. A user should be able to change their password by providing the JWT in the request, their existing password, and the new password.
 
 **Bonus**: We appreciate good documentation this can be done via: 
@@ -33,18 +33,18 @@ Create a Node.js application that provides the following functionality:
 
 The aim of this coding challenge is to assess the following competencies:
 1. Node.js:
-- You may use a Node.js framework (e.g. [NestJS](https://nestjs.com/)).
+    - You may use a Node.js framework (e.g. [NestJS](https://nestjs.com/)).
 2. Typescript:
-- The source code must be written in Typescript.
+    - The source code must be written in Typescript.
 3. Database:
-- You may using any suitable database technology (RDBMS / NOSQL) (e.g. PostgreSQL, MySQL, MongoDB etc.).
+    - You may using any suitable database technology (RDBMS / NOSQL) (e.g. PostgreSQL, MySQL, MongoDB etc.).
 4. Testing:
-- You should write both unit tests and integration tests for the source code using Jest or an equivalent technology.
+    - You should write both unit tests and integration tests for the source code using Jest or an equivalent technology.
 5. CI automation:
-- CI automation should be done via a Github action(s).
+    - CI automation should be done via a Github action(s).
 6. Docker
-- A `DockerFile` should be created for the application. 
-- A `docker-compose.yaml` file should be created for the application, and any external dependencies, e.g. the database.
+    - A `DockerFile` should be created for the application. 
+    - A `docker-compose.yaml` file should be created for the application, and any external dependencies, e.g. the database.
 
 You may use `yarn` / `npm` as the package manager for the project.
 
