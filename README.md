@@ -3,8 +3,6 @@
 This is a technical coding challenge for the backend engineering position. You have 1 week to 
 complete this challenge in your own time.
 
-Feel free to get in touch if you have questions regarding the assignment.
-
 ### Challenge
 
 1. Create a RESTful API service that can perform CRUD (create / read / update / delete) operations on persisted user data.
