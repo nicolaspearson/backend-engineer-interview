@@ -12,14 +12,14 @@ Feel free to get in touch if you have questions regarding the assignment.
     The user model should consist of the following:
     ```json
     {
-      "id": 1,                  // the unique identifier of the record
-      "firstName": "",          // the first name of the user
-      "lastName": "",           // the last name of the user
-      "email": "",              // the email address of the user
-      "dateOfBirth": "",        // the date of birth of the user
-      "address": "",            // the physical address of the user 
-      "createdAt": "",          // the date the record was created
-      "updatedAt": ""           // the date the record was updated
+      "id": 1,
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "dateOfBirth": "",
+      "address": "",
+      "createdAt": "",
+      "updatedAt": ""
     }
     ```
 
