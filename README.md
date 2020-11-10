@@ -1,4 +1,4 @@
-# Backend Engineer Coding Challenge
+# Backend / Platform Engineer Coding Challenge
 
 We use Typescript extensively throughout our backend codebase, however you may use any of the 
 following programming languages to complete the challenge: Typescript, Javascript, Python, Java, 
@@ -9,7 +9,7 @@ keep that in mind when reviewing your solution.
 
 ## Challenge
 
-We have a list of ordered integers (ex: `[1, 3, 7, 8, 9, 10, 11]`). Suppose we slice that list 
+We have a list of ordered integers (e.g.: `[1, 3, 7, 8, 9, 10, 11]`). Suppose we slice that list 
 at a random index and append the "top" half of list to the "bottom" (maintaining the order of both 
 halves while doing so).
 
@@ -44,7 +44,7 @@ pass and red if one or more of the tests fail).
 ### Time Allotment
 
 We respect your time and don't want you spending more than 8 hours on the challenge (The challenge 
-is scoped for a ~2hr time-frame. We just want to get a sense of your thought process and development 
+is scoped for a ~3hr time-frame). We just want to get a sense of your thought process and development 
 patterns. If there are features you don't have time to implement, feel free to use pseudo code to 
 describe the intended behavior.
 
@@ -52,10 +52,10 @@ describe the intended behavior.
 
 Include the following items in your README:
 
-- Description of the problem and solution.
-- Reasoning behind your technical choices. Trade-offs you might have made, anything you left out, 
-or what you might do differently if you were to spend additional time on the challenge.
+- A description of the problem and solution.
 - How we can run your solution locally.
+- The reasoning behind your technical decisions, e.g. trade-offs you might have made, anything you left out, 
+or what you might do differently if you were to spend additional time on the challenge.
 
 ### Commit History
 
@@ -69,5 +69,5 @@ The aspects of your solution we will be reviewing:
 - **Clarity**: Does the README clearly explain the problem and solution?
 - **Correctness**: Does the application do what was asked? If there is anything missing, does the README explain why it is missing?
 - **Code Quality**: Is the code simple, easy to understand, and maintainable?
-- **Testing**: How thorough are the automated tests? Will they be difficult to change if the requirements of the application were to change?
-- **Technical Choices**: Do the choices of architecture / libraries seem appropriate for the challenge?
+- **Testing**: How thorough are the automated tests?
+- **Technical Choices**: Do the choices of architecture, libraries, etc. seem appropriate for the challenge?
