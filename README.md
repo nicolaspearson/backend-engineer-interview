@@ -1,55 +1,73 @@
-## Backend Engineer Coding Challenge
+# Backend Engineer Coding Challenge
 
-This is a technical coding challenge for the backend engineering position. You have 1 week to 
-complete this challenge in your own time.
+We use Typescript extensively throughout our backend codebase, however you may use any of the 
+following programming languages to complete the challenge: Typescript, Javascript, Python, Java, 
+Ruby, Rust, Go.
 
-### Challenge
+Use your README to discuss the experience you have with the technical stack you selected and we'll 
+keep that in mind when reviewing your solution.
 
-1. Create a RESTful API service that can perform CRUD (create / read / update / delete) operations on persisted user data.
+## Challenge
 
-    The user model should consist of the following:
-    ```json
-    {
-      "id": 1,
-      "firstName": "",
-      "lastName": "",
-      "email": "",
-      "dateOfBirth": "",
-      "address": "",
-      "createdAt": "",
-      "updatedAt": ""
-    }
+We have a list of ordered integers (ex: `[1, 3, 7, 8, 9, 10, 11]`). Suppose we slice that list 
+at a random index and append the "top" half of list to the "bottom" (maintaining the order of both 
+halves while doing so).
+
+1. Write a function that returns the largest integer in the "shifted" list.
+
+    View the samples below for a better understanding of how the lists are mutated:
+    ```typescript
+    // Sample 1
+    const initialList = [1, 3, 7, 8, 9, 10, 11]  // Here is our initial ordered list
+    const shiftedList = [8, 9, 10, 11, 1, 3, 7]  // Here is the list after it has been sliced (at index 3) and shifted
+    // Your function should return `11`
+
+    // Sample 2
+    const initialList = [2, 4, 6, 8, 10]  // Here is our initial ordered list
+    const shiftedList = [6, 8, 10, 2, 4]  // Here is the list after it has been sliced (at index 2) and shifted
+    // Your function should return `10`
+
+    // Sample 3
+    const initialList = [2, 4, 6, 8, 10]  // Here is our initial ordered list
+    const shiftedList = [2, 4, 6, 8, 10]  // Here is the list after it has been sliced (at index 0) and shifted
+    // Your function should return `10`
     ```
+    - Can you identify any edge cases that we need to account for?
+    - Can you explain the orders of growth implications of the algorithm you implemented?
+    - Suppose our initial list contains 1 million elements, is there a more performant way we can 
+    find the answer?
 
-2. Create a github action that runs the tests, and builds the application if the tests pass.
+2. Write unit tests for your code.
+3. Create a github action that will run the unit tests (the pipeline should be green if the tests 
+pass and red if one or more of the tests fail).
 
-### Requirements:
+### Time Allotment
 
-1. Host the project on `github`.
-2. Programming language:
-    - You may use any popular backend programming language to complete the challenge, e.g. Python, Typescript, Javascript, Java, C#, Ruby, Rust, Go, etc.
-3. API design:
-    - The RESTful API design should follow best practices.
-4. Data modelling:
-    - You may using any suitable data storage technique / database technology (RDBMS / NOSQL) (e.g. PostgreSQL, MySQL, MongoDB etc.).
-5. Testing:
-    - Ideally you should provide unit tests for your code.
-    - **Bonus**: Integration tests.
-6. Github actions:
-    - **Bonus**: Bundle the application and include it in a docker image as a step in pipeline (the application in the image does not need to connect to an external database).
-7. Docker
-    - A `DockerFile` should be created for the application. 
-    - A `docker-compose.yaml` file should be created for the application, and any external dependencies, e.g. a database.
-8. Documentation
-    - At a minimum you should provide documentation that explains what the application does, how to run it, and how to run the tests.
-    - **Bonus**: API Documentation (e.g. Swagger).
+We respect your time and don't want you spending more than 8 hours on the challenge (The challenge 
+is scoped for a ~2hr time-frame. We just want to get a sense of your thought process and development 
+patterns. If there are features you don't have time to implement, feel free to use pseudo code to 
+describe the intended behavior.
 
-### What We Review
+### Your Challenge README
 
-The aspects of your code we will judge include:
+Include the following items in your README:
 
-- **Clarity**: Does the README clearly explain the application and how it works?
+- Description of the problem and solution.
+- Reasoning behind your technical choices. Trade-offs you might have made, anything you left out, 
+or what you might do differently if you were to spend additional time on the challenge.
+- How we can run your solution locally.
+
+### Commit History
+
+You may use whichever development workflow works best for you. If your solution is small enough for 
+a single commit, that is fine, we just ask that you keep your [commit history as clean as possible](https://www.notion.so/Keeping-Commit-Histories-Clean-0f717c4e802c4a0ebd852cf9337ce5d2).
+
+## What We Review
+
+The aspects of your solution we will be reviewing:
+
+- **Clarity**: Does the README clearly explain the problem and solution?
 - **Correctness**: Does the application do what was asked? If there is anything missing, does the README explain why it is missing?
 - **Code Quality**: Is the code simple, easy to understand, and maintainable?
 - **Testing**: How thorough are the automated tests? Will they be difficult to change if the requirements of the application were to change?
-- **Technical Choices**: Do the choices of libraries / databases / architecture seem appropriate for the challenge?
+- **Technical Choices**: Do the choices of architecture / libraries seem appropriate for the challenge?
